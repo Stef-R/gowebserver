@@ -23,3 +23,6 @@ Test that you can run it:
 Here's how to run the test suite:
 
     docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp golang:1.6 go test -v
+
+## Task Management
+Can be joined at: https://waffle.io/sthordall/gowebserver/join
