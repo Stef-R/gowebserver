@@ -26,3 +26,6 @@ Here's how to run the test suite:
 
 ## Task Management
 Can be joined at: https://waffle.io/sthordall/gowebserver/join
+
+## VM
+Using 65, Lynx directory created
