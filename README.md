@@ -26,7 +26,7 @@ Here's how to run the test suite:
     docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp golang:1.6 go test -v
 
 ## Task Management
-Can be joined at: https://waffle.io/sthordall/gowebserver/join
+Can be joined at: https://waffle.io/sthordall/gowebserver
 
 ## VM
 Using 65, Lynx directory created
