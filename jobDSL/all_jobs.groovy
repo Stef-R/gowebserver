@@ -35,7 +35,11 @@ job(buildJobName) {
             sudo docker kill ${cid}
             sudo docker rm ${cid}'''.stripIndent())
     }
+	wrappers {
+        pretestedIntegration("SQUASHED","master","origin")
+	}
     publishers {
+        pretestedIntegration()
         downstreamParameterized {
             trigger(testJobName) {
                 condition('SUCCESS')

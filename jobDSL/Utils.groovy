@@ -6,7 +6,7 @@ static def configureGit(def job, def repositoryUrl) {
                     name('origin')
                     url(repositoryUrl)
                 }
-                branch('master')
+                branch('origin/ready/**')
                 configure {
                     it / 'extensions' << 'hudson.plugins.git.extensions.impl.PathRestriction' {
                         'includedRegions' '''\
