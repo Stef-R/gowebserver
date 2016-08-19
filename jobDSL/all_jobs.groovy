@@ -34,6 +34,8 @@ job(buildJobName) {
             [ $? -ne 0 ] && exit 1
             sudo docker kill ${cid}
             sudo docker rm ${cid}'''.stripIndent())
+		shell ('''\
+			docker run --rm -v /var/jenkins_home/jobs/1.build-webserver_GEN/workspace:/usr/src/myapp -w /usr/src/myapp golang:1.6 go test -v''')
     }
 	wrappers {
         pretestedIntegration("SQUASHED","master","origin")
